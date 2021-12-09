@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Main view setup */
 html {
     min-height: 100%;
@@ -41,6 +35,12 @@ body {
     width: 80px;
     height: 40px;
     font-family: Fredoka One, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1B2F33;
+    color: #FFFCFF;
 }
 
 .selections {
@@ -49,15 +49,19 @@ body {
 }
 
 .player {
+    margin: 2px;
     float: left;
     width: 45%;
     overflow: none;
+    font-size: 100%;
 }
 
 .computer {
+    margin: 2px;
     float: right;
     width: 45%;
     overflow: none;
+    font-size: 100%;
 }
 
 #player-image {
