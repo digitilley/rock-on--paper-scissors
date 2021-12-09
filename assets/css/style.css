@@ -4,6 +4,7 @@
 html {
     min-height: 100%;
     position: relative;
+    background-color: #FFFCFF;
 }
 
 body {
@@ -36,22 +37,43 @@ body {
     font-family: Fredoka One, sans-serif;
 }
 
-.player {
-    float: left;
-    width: 50%;
+.selections {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
+.player {
+    outline: 1px solid #1B2F33;
+    float: left;
+    width: 45%;
+    overflow: none;
 }
 
 .computer {
+    outline: 1px solid #1B2F33;
     float: right;
-    width: 50%;
+    width: 45%;
+    overflow: none;
 }
 
 #player-image {
-    width: 50%;
+    width: 90%;
 }
 
 #computer-image {
-    width: 50%;
+    width: 90%;
 }
 
+.footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    min-height: 80px;
+    padding-top: 5px;
+    text-align: center;
+    background-color: #1B2F33;
+    color: #FFFCFF;
+
+}
