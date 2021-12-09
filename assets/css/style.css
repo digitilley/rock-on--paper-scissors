@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+/* Main view setup */
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-color: #FFFCFF;
+    color: #1B2F33;
+    font-family: Fredoka One, sans-serif;
+    text-align: center;
+}
+/* Header */
+
+.heading {
+    font-size: 250%
+}
+
+/* Game Area */
+
+.game-area {
+    background-color: red;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    width: 75%;
+}
+
+.button {
+    display: inline-block;
+    margin: 2px;
+    width: 80px;
+    height: 40px;
+    font-family: Fredoka One, sans-serif;
+}
+
+.player {
+
+}
+
+.computer {
+    
+}
+
+
