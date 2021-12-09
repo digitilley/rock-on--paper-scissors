@@ -43,14 +43,12 @@ body {
 }
 
 .player {
-    outline: 1px solid #1B2F33;
     float: left;
     width: 45%;
     overflow: none;
 }
 
 .computer {
-    outline: 1px solid #1B2F33;
     float: right;
     width: 45%;
     overflow: none;
