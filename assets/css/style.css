@@ -25,8 +25,11 @@ body {
     list-style-type: none;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1%;
     width: 75%;
+}
+
+.game-area h2 {
+    margin-bottom: 5px;
 }
 
 .control {
@@ -44,36 +47,30 @@ body {
 }
 
 .outcome-container {
-    margin: 25px;
+    margin: 0px;
 }
 
 #messages {
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
 }
 
 .player {
-    margin: 2px;
     float: left;
     width: 40%;
-    overflow: none;
-    font-size: 100%;
 }
 
 #player-image {
-    width: 75%;
+    width: 60%;
 }
 
 .computer {
-    margin: 2px;
     float: right;
     width: 40%;
-    overflow: none;
-    font-size: 100%;
 }
 
 #computer-image {
-    width: 75%;
+    width: 60%;
 }
 
 /* Footer */
