@@ -69,6 +69,21 @@ function checkWinner(playerChoice, computerChoice) {
     }
 }
 
+/**
+ * Determines winner when player or computer reaches 15
+ */
+
+function determineResult(playerScore, computerScore) {
+    let;
+    if (playerScore.innerHTML === "15") {
+        console.log("YOU ARE VICTORIOUS!");
+    } else if (computerScore.innerHTML === "15") {
+        console.log("YOU LOSE!");
+    } else {
+        console.log("");
+    }        
+}
+
 
 
 
