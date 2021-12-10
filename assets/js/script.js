@@ -3,8 +3,8 @@
  * and possible choices to select from
  */
 
-const playerScore = document.getElementById("player-score");
-const computerScore = document.getElementById("computer-score");
+let playerScore = document.getElementById("player-score");
+let computerScore = document.getElementById("computer-score");
 const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
 const buttons = document.getElementsByClassName("control");
@@ -37,7 +37,7 @@ function game(playerChoice) {
 
     let result = checkWinner(choices[playerChoice], choices[computerChoice]);
 
-    updateScores(result);
+    // updateScores(result);
 }
 
 /** 
@@ -45,12 +45,29 @@ function game(playerChoice) {
  * Displays result in scoreboard
  */
 
-function checkWinner() {
+function checkWinner(playerChoice, computerChoice) {
     switch (playerChoice + computerChoice) {
-        case "rockpaper":
+        case "rockscissors":
         case "paperrock":
         case "scissorspaper":
-        console.log("Victory!")
-        break;
+            playerScore.innerHTML++;
+            break;
+        case "rockpaper":
+        case "paperscissors":
+        case "scissorsrock":
+            computerScore.innerHTML++;
+            break;
+        case "rockrock":
+        case "paperpaper":
+        case "scissorsscissors":
+            break;
     }
 }
+
+
+
+
+
+
+
+
