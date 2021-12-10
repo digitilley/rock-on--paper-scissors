@@ -53,36 +53,21 @@ function checkWinner(playerChoice, computerChoice) {
         case "paperrock":
         case "scissorspaper":
             playerScore.innerHTML++;
-            outcomeText.innerHTML = "VICTORY!"
-            break;
+            outcomeText.innerHTML = "VICTORY!";
+            break
         case "rockpaper":
         case "paperscissors":
         case "scissorsrock":
             computerScore.innerHTML++;
-            outcomeText.innerHTML = "ALAS, NOT THIS TIME!"
+            outcomeText.innerHTML = "ALAS, NOT THIS TIME!";
             break;
         case "rockrock":
         case "paperpaper":
         case "scissorsscissors":
-            outcomeText.innerHTML = "TIS A DRAW!"
+            outcomeText.innerHTML = "TIS A DRAW!";
             break;
     }
 }
-
-/**
- * Determines winner when player or computer reaches 15
- */
-
-function determineResult(playerScore, computerScore) {
-    if (playerScore.innerHTML === "15") {
-        console.log("YOU ARE VICTORIOUS!");
-    } else if (computerScore.innerHTML === "15") {
-        console.log("YOU LOSE!");
-    } else {
-        console.log("");
-    }        
-}
-
 
 
 
