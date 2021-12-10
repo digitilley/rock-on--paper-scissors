@@ -6,12 +6,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for (let button of buttons){
         button.addEventListener("click", function() {
-            if (this.getAttribute("data-type") === "rock") {
-                AudioListener("You chose Rock");
-            } else {
-                let gameType = this.getAttribute("data-type");
-                alert(`You clicked ${gameType}`);
-            }
+            if (this.getAttribute("data-choice") === "0") {
+                alert("You chose Rock");
+            }    
+            if (this.getAttribute("data-choice") === "1") {
+                    alert("You chose Paper");
+            }        
+            if (this.getAttribute("data-choice") === "2") {
+                    alert("You chose Scissors");    
+            }    
         })
     }
 })
