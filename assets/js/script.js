@@ -35,8 +35,22 @@ function game(playerChoice) {
     computerImage.src = `assets/images/${choices[computerChoice]}.png`;
     computerImage.alt = choices[computerChoice];
 
-    let result = checkWinner(choices[computerChoice], choices[playerChoice]);
+    let result = checkWinner(choices[playerChoice], choices[computerChoice]);
 
     updateScores(result);
 }
 
+/** 
+ * Checks who wins
+ * Displays result in scoreboard
+ */
+
+function checkWinner() {
+    switch (playerChoice + computerChoice) {
+        case "rockpaper":
+        case "paperrock":
+        case "scissorspaper":
+        console.log("Victory!")
+        break;
+    }
+}
