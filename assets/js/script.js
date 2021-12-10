@@ -1,52 +1,45 @@
-//Wait for the DOM to finsih loading before running the game
-// Get the button elements and add event listeners to them
+/**
+ * Declare constants for DOM elements
+ * and possible choices to select from
+ */
 
-document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("button");
+const buttons = document.getElementsByClassName("button");
+const userScore = document.getElementById("userscore");
+const compScore = document.getElementById("compscore");
+const userImage = document.getElementById("userimage");
+const compImage = document.getElementById("compimage");
+const messages = document.getElementById("messages");
+const choices = ["rock", "paper", "scissors"];
 
-    for (let button of buttons){
+/**
+ * Add event listener to all the buttons
+ */
+for (let button of buttons){
         button.addEventListener("click", function() {
-            if (this.getAttribute("data-choice") === "0") {
-                alert("You chose Rock");
-            }    
-            if (this.getAttribute("data-choice") === "1") {
-                    alert("You chose Paper");
-            }        
-            if (this.getAttribute("data-choice") === "2") {
-                    alert("You chose Scissors");    
-            }    
-        })
-    }
-})
+            let userChoice = this.getAttribute("data-choice");
+            game(userChoice);
+        });
 
-function runGame() {
+/**
+ * Main game function
+ * Checks button clicked by user and compares to computers random selection
+ */
+function game(userChoice) {
+    
+    userImage.src = `assets/images/${choices[userChoice]}.png`;
+    userImage.alt = choices[userChoice];
 
+    let compChoice = Math.floor(Math.random() * 3);
+
+    compImage.src = `assets/images/${choices[compChoice]}.png`;
+    compImage.alt = choices[compChoice];
+
+    let result = checkWinner(choices[compChoice], choices[userChoice]);
+
+    updateScores(result);
 }
 
-function checkAnswer() {
-
-}
-
-function calculateCorrectAnswer() {
-
-}
-
-function incrementScore() {
-
-}
-
-function incrementWrongAnswer() {
-
-}
-
-function userWins() {
-
-}
-
-function userLoses() {
-
-}
-
-function userDraws() {
-
-}
+/** 
+ * Checks to see who winner is
+ */
+function 

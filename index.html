@@ -11,30 +11,26 @@
     <header>
         <h1 class="header">Rock, Paper, Scissors</h1>    
     </header>
-    <div class="game-area">
-        <h2>Pick Your Weapon:</h2>
+
+    <section class="game-area">
         <div>
-            <button aria-label="Rock" data-choice="0" class="button">
-            Rock</button>
-            <button aria-label="Paper" data-choice="1" class="button">
-                Paper</button>
-            <button aria-label="Scissors" data-choice="2" class="button">
-                Scissors</button>
+            <h2>Pick Your Weapon:</h2>
+            <button aria-label="Rock" data-choice="0" class="control">Rock</button>
+            <button aria-label="Paper" data-choice="1" class="control">Paper</button>
+            <button aria-label="Scissors" data-choice="2" class="control">Scissors</button>
         </div>
-        <div class="selections">
+        <div id="messages">
             <div class="player">
                 <h3 class="scores">Your score: <span id="player-score">0</span></h3>
-                <img id="player-image" src="assets/images/rps.png" alt="Rock, Paper, Scissors">
+                <img id="player-image" src="assets/images/rps.png" alt="Rock Paper Scissors">
             </div>
             <div class="computer">
                 <h3 class="scores">Computer: <span id="computer-score">0</span></h3>
-                <img id="computer-image" src="assets/images/rps.png" alt="Rock, Paper, Scissors">
+                <img id="computer-image" src="assets/images/rps.png" alt="Rock Paper Scissors">
         </div>
-        </div class="result">
-        <h3 class=""></h3>
-        </div>
-    </div>
-    <footer class="footer">
+    </section>
+
+    <footer>
         <h3>Rules:</h3>
         <p>Rock blunts Scissors | Paper covers Rock | Scissors cut Paper</p>
     </footer>
