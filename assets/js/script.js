@@ -74,7 +74,6 @@ function checkWinner(playerChoice, computerChoice) {
  */
 
 function determineResult(playerScore, computerScore) {
-    let;
     if (playerScore.innerHTML === "15") {
         console.log("YOU ARE VICTORIOUS!");
     } else if (computerScore.innerHTML === "15") {
