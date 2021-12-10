@@ -3,43 +3,40 @@
  * and possible choices to select from
  */
 
-const buttons = document.getElementsByClassName("button");
-const userScore = document.getElementById("userscore");
-const compScore = document.getElementById("compscore");
-const userImage = document.getElementById("userimage");
-const compImage = document.getElementById("compimage");
+const playerScore = document.getElementById("player-score");
+const computerScore = document.getElementById("computer-score");
+const playerImage = document.getElementById("player-image");
+const computerImage = document.getElementById("computer-image");
+const buttons = document.getElementsByClassName("control");
 const messages = document.getElementById("messages");
 const choices = ["rock", "paper", "scissors"];
 
 /**
  * Add event listener to all the buttons
  */
-for (let button of buttons){
+for (let button of buttons) {
         button.addEventListener("click", function() {
-            let userChoice = this.getAttribute("data-choice");
-            game(userChoice);
+            let playerChoice = this.getAttribute("data-choice");
+            game(playerChoice);
         });
+}
 
 /**
  * Main game function
  * Checks button clicked by user and compares to computers random selection
  */
-function game(userChoice) {
+function game(playerChoice) {
     
-    userImage.src = `assets/images/${choices[userChoice]}.png`;
-    userImage.alt = choices[userChoice];
+    playerImage.src = `assets/images/${choices[playerChoice]}.png`;
+    playerImage.alt = choices[playerChoice];
 
-    let compChoice = Math.floor(Math.random() * 3);
+    let computerChoice = Math.floor(Math.random() * 3);
 
-    compImage.src = `assets/images/${choices[compChoice]}.png`;
-    compImage.alt = choices[compChoice];
+    computerImage.src = `assets/images/${choices[computerChoice]}.png`;
+    computerImage.alt = choices[computerChoice];
 
-    let result = checkWinner(choices[compChoice], choices[userChoice]);
+    let result = checkWinner(choices[computerChoice], choices[playerChoice]);
 
     updateScores(result);
 }
 
-/** 
- * Checks to see who winner is
- */
-function 
