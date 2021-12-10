@@ -43,6 +43,10 @@ body {
     color: #FFFCFF;
 }
 
+.outcome-container {
+    margin: 25px;
+}
+
 #messages {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -57,7 +61,7 @@ body {
 }
 
 #player-image {
-    width: 90%;
+    width: 75%;
 }
 
 .computer {
@@ -69,7 +73,7 @@ body {
 }
 
 #computer-image {
-    width: 90%;
+    width: 75%;
 }
 
 /* Footer */
