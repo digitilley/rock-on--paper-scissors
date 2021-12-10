@@ -5,6 +5,7 @@
 
 let playerScore = document.getElementById("player-score");
 let computerScore = document.getElementById("computer-score");
+let outcomeText = document.getElementById("outcome")
 const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
 const buttons = document.getElementsByClassName("control");
@@ -43,6 +44,7 @@ function game(playerChoice) {
 /** 
  * Checks who wins
  * Displays result in scoreboard
+ * ---- External source used to help with this section: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch -----
  */
 
 function checkWinner(playerChoice, computerChoice) {
@@ -51,15 +53,18 @@ function checkWinner(playerChoice, computerChoice) {
         case "paperrock":
         case "scissorspaper":
             playerScore.innerHTML++;
+            outcomeText.innerHTML = "VICTORY!"
             break;
         case "rockpaper":
         case "paperscissors":
         case "scissorsrock":
             computerScore.innerHTML++;
+            outcomeText.innerHTML = "ALAS, NOT THIS TIME!"
             break;
         case "rockrock":
         case "paperpaper":
         case "scissorsscissors":
+            outcomeText.innerHTML = "TIS A DRAW!"
             break;
     }
 }
