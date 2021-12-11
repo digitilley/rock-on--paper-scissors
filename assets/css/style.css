@@ -16,7 +16,8 @@ body {
 /* Header */
 
 .header {
-    font-size: 250%
+    font-size: 250%;
+    margin: 80px;
 }
 
 /* Game Area */
@@ -93,25 +94,68 @@ footer {
 
 }
 
+@media screen and (max-width: 1280px) {
+    .header {
+        margin: 50px;
+    }
+
+    #player-image {
+        width: 90%;
+    }
+
+    #computer-image {
+        width: 90%;
+    }
+
+    #messages {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        margin: 65px;
+    }
+
+    h2 {
+        margin: 30px;
+    }
+
+    #player-image {
+        width: 90%;
+    }
+
+    #computer-image {
+        width: 90%;
+    }
+
+    #messages {
+        margin: 40px;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .header {
+        margin: 0px;
         font-size: 125%;
     }
 
     h2 {
+        margin: 0px;
         font-size: 100%;
     }
 
-    .scores {
-        font-size: 100%;
+    #player-image {
+        width: 70%;
     }
 
-    .control {
-        font-size: 75%;
-        width: 80px;
+    #computer-image {
+        width: 70%;
     }
 
-    #outcome {
-        font-size: 100%;
+    #messages {
+        margin: 10px;
     }
 }
+
+
