@@ -50,6 +50,10 @@ body {
     margin: 0px;
 }
 
+#player-win {
+    color: #288F28;
+}
+
 #messages {
     padding-top: 0px;
     padding-bottom: 20px;
@@ -87,4 +91,27 @@ footer {
     background-color: #1B2F33;
     color: #FFFCFF;
 
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        font-size: 125%;
+    }
+
+    h2 {
+        font-size: 100%;
+    }
+
+    .scores {
+        font-size: 100%;
+    }
+
+    .control {
+        font-size: 75%;
+        width: 80px;
+    }
+
+    #outcome {
+        font-size: 100%;
+    }
 }
