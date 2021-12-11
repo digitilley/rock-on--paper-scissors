@@ -17,7 +17,7 @@ body {
 
 .header {
     font-size: 250%;
-    margin: 80px;
+    margin: 40px;
 }
 
 /* Game Area */
@@ -66,7 +66,7 @@ body {
 }
 
 #player-image {
-    width: 60%;
+    width: 70%;
 }
 
 .computer {
@@ -75,7 +75,7 @@ body {
 }
 
 #computer-image {
-    width: 60%;
+    width: 70%;
 }
 
 /* Footer */
@@ -96,7 +96,7 @@ footer {
 
 @media screen and (max-width: 1280px) {
     .header {
-        margin: 50px;
+        margin: 20px;
     }
 
     #player-image {
