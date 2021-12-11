@@ -22,8 +22,8 @@ The live site can be accessed [here.](https://digitilley.github.io/rock-paper-sc
 - The initial concept was designed first to structure the layout of the content and media that was envisaged.
 - I had originally wanted to include a best of 15 scoreboard but unfortunately had to limit this due to time constraints.
 
-<img src="assets/images/initial-concept1.png">
-<img src="assets/images/initial-concept2.png">
+<img src="assets/images/in-concept2.png">
+<img src="assets/images/in-concept1.png">
 
 # **Features**
 This section covers the features used for the website to function seemlessly, ensuring accessibility requirements are achieved at the same time.
@@ -55,5 +55,35 @@ This section covers the features used for the website to function seemlessly, en
 
 # **Validator Testing**
 ### HTML
-- No errors were returned when passing through the official [W3C Validator](https://validator.w3.org/nu/#textarea)
+- No errors were found when passing through the official [W3C Validator](https://validator.w3.org/nu/#textarea)
 
+### CSS
+- No errors were found when passing through the official [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator)
+
+### JS
+- No errors were found when passing through the official [JSHint Validator](https://jshint.com/)
+
+### Accessibility
+- My site scored the maximum score of 100 on Google Lighthouse
+
+<img src="assets/images/accessibility-score.png">
+
+### Bugs
+- There were no bugs found at the time of final deployment
+
+# **Deployment**
+The site was deployed to GitHub pages using the following steps...
+- While in the GitHub repository, go to the settings tab
+- In the "Source Section", select "Master Branch
+- Select Pages
+- In the source section drop-down menu, chose the Main Branch and save
+
+# **Credits**
+### General
+- Reuben, my Code Institute mentor
+- [General challenges with HTML/CSS]()
+- [Fonts]()
+- [Images](google.com/images)
+
+### Specific
+- [Switch Statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)

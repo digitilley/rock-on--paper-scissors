@@ -134,14 +134,14 @@ footer {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
     .header {
-        margin: 0px;
+        margin: 40px;
         font-size: 125%;
     }
 
     h2 {
-        margin: 0px;
+        margin: 30px;
         font-size: 100%;
     }
 
@@ -156,6 +156,7 @@ footer {
     #messages {
         margin: 10px;
     }
+    
 }
 
 

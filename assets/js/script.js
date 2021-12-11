@@ -5,11 +5,10 @@
 
 let playerScore = document.getElementById("player-score");
 let computerScore = document.getElementById("computer-score");
-let outcomeText = document.getElementById("outcome")
+let outcomeText = document.getElementById("outcome");
 const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
 const buttons = document.getElementsByClassName("control");
-const messages = document.getElementById("messages");
 const choices = ["rock", "paper", "scissors"];
 
 /**
@@ -36,9 +35,7 @@ function game(playerChoice) {
     computerImage.src = `assets/images/${choices[computerChoice]}.png`;
     computerImage.alt = choices[computerChoice];
 
-    let result = checkWinner(choices[playerChoice], choices[computerChoice]);
-
-    // updateScores(result);
+    checkWinner(choices[playerChoice], choices[computerChoice]);
 }
 
 /** 
@@ -54,7 +51,7 @@ function checkWinner(playerChoice, computerChoice) {
         case "scissorspaper":
             playerScore.innerHTML++;
             outcomeText.innerHTML = "VICTORY!";
-            break
+            break;
         case "rockpaper":
         case "paperscissors":
         case "scissorsrock":
@@ -68,8 +65,6 @@ function checkWinner(playerChoice, computerChoice) {
             break;
     }
 }
-
-
 
 
 
